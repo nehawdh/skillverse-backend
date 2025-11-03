@@ -70,6 +70,8 @@ INSERT INTO enrollments (user_id, course_id, started_at, completed_at, progress_
 
 
 -- Link to user_id & course_id that are completed
-INSERT INTO certificates (user_id, course_id, issued_at, pdf_url, serial) VALUES
-(2, 3, NOW(), 'https://example.com/certificates/ml101.pdf', 'CERT-ML101-2025-0001'),
-(3, 4, NOW(), 'https://example.com/certificates/powerbi.pdf', 'CERT-PBI-2025-0002');
+--INSERT INTO certificates (user_id, course_id, issued_at, pdf_url, serial) VALUES
+--(2, 3, NOW(), 'https://example.com/certificates/ml101.pdf', 'CERT-ML101-2025-0001'),
+--(3, 4, NOW(), 'https://example.com/certificates/powerbi.pdf', 'CERT-PBI-2025-0002');
+
+
