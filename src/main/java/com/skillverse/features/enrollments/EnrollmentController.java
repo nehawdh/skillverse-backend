@@ -24,7 +24,7 @@ public class EnrollmentController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Enrollment create(@RequestBody Enrollment e) {
-        if (e.getUserId() == null || e.getCourse() == null) {
+        if (e.getUserId() == null || e.getCourseId() == null) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "userId and courseId are required");
         }
         return repo.save(e);

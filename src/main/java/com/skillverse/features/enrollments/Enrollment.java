@@ -22,7 +22,7 @@ public class Enrollment {
 
   private Long userId;   // replace with real User entity when you add Keycloak sync
   @ManyToOne(optional=false) @JoinColumn(name="course_id")
-  private Course course;
+  private Course courseId;
 
   private Instant startedAt = Instant.now();
   private Instant completedAt;
