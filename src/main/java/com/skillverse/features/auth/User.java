@@ -20,5 +20,9 @@ public class User {
   private String role = "STUDENT"; // STUDENT/INSTRUCTOR/ADMIN
 
   private Instant createdAt = Instant.now();
+  // in User.java
+ @Column 
+ private String name;
+
 }
 

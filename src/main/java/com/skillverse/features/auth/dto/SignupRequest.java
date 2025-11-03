@@ -1,5 +1,6 @@
 package com.skillverse.features.auth.dto;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-public record SignupRequest(String email, String password, String role) {}
-
+@JsonIgnoreProperties(ignoreUnknown = true)
+public record SignupRequest(String email, String password, String role, String name) {}
 

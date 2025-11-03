@@ -32,6 +32,7 @@ public class AuthController {
     var u = new User();
     u.setEmail(req.email().toLowerCase());
     u.setPasswordHash(encoder.encode(req.password()));
+    u.setName(req.name());
     u.setRole((req.role() == null || req.role().isBlank()) ? "STUDENT" : req.role().toUpperCase());
     u = users.save(u);
 
